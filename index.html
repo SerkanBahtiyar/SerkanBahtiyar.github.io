@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Elemanlar</title>
+</head>
+<body>
+
+<!-- Liste oluştur -->
+<ul id="myList">
+    <li>serkan</li>
+    <li>duygu</li>
+    <li>doğukan</li>
+    <li>nida</li>
+    <li>hakan</li>
+    <li>mutlu</li>
+     <li>sıla</li>
+     <li>can</li>
+</ul>
+
+<!-- Script ile rastgele elemanları seç ve <p> etiketine yazdır -->
+<script>
+    // Liste elemanlarını al
+    var list = document.getElementById("myList").getElementsByTagName("li");
+
+    // Rastgele iki indeks seç
+    var randomIndex1 = Math.floor(Math.random() * list.length);
+    var randomIndex2;
+    
+    do {
+        randomIndex2 = Math.floor(Math.random() * list.length);
+    } while (randomIndex2 === randomIndex1); // Farklı bir indeks seçene kadar devam et
+
+    // Seçilen elemanları <p> etiketine yazdır
+    var paragraph = document.createElement("p");
+    paragraph.textContent = "Rastgele Elemanlar: " + list[randomIndex1].textContent + " ve " + list[randomIndex2].textContent;
+    document.body.appendChild(paragraph);
+</script>
+
+</body>
+</html>
