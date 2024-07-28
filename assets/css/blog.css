@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* Serif Font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+.blogheading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px ;
+}
+.m150pxlr {
+    margin: 0px 150px;
+    padding: 0px 50px ;
+    box-shadow: 2px 2px 10px 7px rgb(1, 60, 85);
+    /* border: 2px solid black; */
+}
+.blogheading {
+    padding-top: 50px;
+}
+.blogheading h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #140504;;
+}
+.post {
+    /* border: 2px solid brown; */
+    width: 100%;
+    display: grid;
+    row-gap: 20px;
+
+}
+.postimg  {
+    width: 100%;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.postimg img {
+    width: 70%;
+    height: auto;
+}
+.postheading {
+    font-family: 'Nanum Myeongjo', serif;
+}
+.postdes {
+    margin-bottom: 20px ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
