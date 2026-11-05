@@ -11,4 +11,3 @@ const menuButton=document.querySelector(".menu-toggle"),nav=document.querySelect
 menuButton.addEventListener("click",()=>{const open=menuButton.getAttribute("aria-expanded")!=="true";menuButton.setAttribute("aria-expanded",String(open));nav.style.display=open?"flex":"none";});
 nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.style.display="";menuButton.setAttribute("aria-expanded","false")}));
 document.querySelectorAll(".filter-btn").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const filter=btn.dataset.filter;document.querySelectorAll(".project-card").forEach(card=>{card.hidden=filter!=="all"&&card.dataset.category!==filter})}));
-const emailLink=document.querySelector(".email-link");emailLink.addEventListener("click",e=>{e.preventDefault();});
