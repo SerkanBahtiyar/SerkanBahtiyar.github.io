@@ -50,7 +50,10 @@
           <div class="portrait-wrap"><img src="assets/img/aa.jpg" alt="Serkan Bahtiyar portre fotoğrafı" onerror="this.style.display='none'"><div class="portrait-fallback">SB</div></div>
           <div class="floating-card card-code"><span class="card-icon">&lt;/&gt;</span><div><strong>Build</strong><small data-i18n="floatingBuild">Fikirden ürüne</small></div></div>
           <div class="floating-card card-ai"><span class="card-icon">✳</span><div><strong>Explore</strong><small>AI &amp; Software</small></div></div>
-          <div class="visual-caption"><span>01/04</span><span>ENGINEERING · CREATIVITY · IMPACT</span></div>
+          <div class="visual-caption"><span id="current-date"></span><span>ENGINEERING · CREATIVITY · IMPACT</span></div>
+          <script>
+    document.getElementById("current-date").textContent = new Date().toLocaleDateString("tr-TR");
+</script>
         </div>
       </div>
       <a class="scroll-cue" href="#about"><span></span><span data-i18n="scroll">Aşağı kaydır</span></a>
